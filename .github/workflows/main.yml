@@ -56,6 +56,7 @@ jobs:
         else
           git commit -m "Update blocklist file"
           git push
+        fi
       env:
         # GitHub 提供的默认 token，用于认证
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
