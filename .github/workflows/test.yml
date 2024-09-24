@@ -1,0 +1,21 @@
+name: Download AdGuard Filter List
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天凌晨0点执行
+
+jobs:
+  download-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download filter list
+        run: curl -o singbox/adguard.txt https://github.com/ppfeufer/adguard-filter-list/blob/master/blocklist?raw=true
+      - name: Commit changes
+        run: git config user.name 'your-username' && git config user.email 'your-email@example.com'
+        with:
+          name: Update adguard filter list
+          commit: Update adguard filter list
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: ${{ steps.commit.outputs.commit }}
