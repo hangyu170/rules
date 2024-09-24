@@ -6,6 +6,8 @@ on:
     # 每天凌晨 1 点执行一次
     - cron: '0 1 * * *'
   workflow_dispatch:
+permissions:
+  contents: write
 
 jobs:
   download_and_upload:
@@ -15,20 +17,38 @@ jobs:
     # 检出当前仓库
     - name: Checkout Repository
       uses: actions/checkout@v3
+      
+    - name: Install sing-box
+      run: |
+        curl -Lo sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz
+        tar -xzf sing-box.tar.gz
+        chmod +x sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box
+        sudo mv sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box /usr/local/bin/sing-box
+        sing-box version
 
     # 下载指定文件
     - name: Download blocklist file
       run: |
-        curl -o blocklist https://github.com/ppfeufer/adguard-filter-list/blob/master/blocklist?raw=true
-
+        rm -rf blocklist.srs
+        curl -o blocklist.txt https://github.com/ppfeufer/adguard-filter-list/blob/master/blocklist?raw=true
+        mv sing-box/* ./
+        rm -rf sing-box sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
+        echo "Compiling: blocklist"
+        if ! sing-box rule-set convert --type adguard blocklist.txt; then
+          echo "Error compiling blocklist"
+          exit 1
+        fi
+        rm -rf blocklist.txt
+        
     # 将下载的文件添加到 git，并提交
     - name: Commit and Push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add blocklist
+        git add blocklist.srs
         git commit -m "Update blocklist file"
         git push
       env:
         # GitHub 提供的默认 token，用于认证
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SING_BOX_VERSION: 1.10.0-beta.4
