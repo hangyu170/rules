@@ -8,7 +8,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-
+env:
+  SING_BOX_VERSION: 1.10.0-beta.4
+  
 jobs:
   download_and_upload:
     runs-on: ubuntu-latest
@@ -51,4 +53,3 @@ jobs:
       env:
         # GitHub 提供的默认 token，用于认证
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SING_BOX_VERSION: 1.10.0-beta.4
