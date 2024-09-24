@@ -32,7 +32,7 @@ jobs:
     - name: Download blocklist file
       run: |
         rm -rf blocklist.srs
-        curl -o blocklist.txt https://github.com/ppfeufer/adguard-filter-list/blob/master/blocklist?raw=true
+        wget -O blocklist.txt https://github.com/ppfeufer/adguard-filter-list/blob/master/blocklist?raw=true
         rm -rf sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
         echo "Compiling: blocklist"
         echo "ok"
