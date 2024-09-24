@@ -36,6 +36,7 @@ jobs:
         rm -rf sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
         echo "Compiling: blocklist"
         sing-box version
+        ls
         if ! sing-box rule-set convert --type adguard blocklist.txt; then
           echo "Error compiling blocklist"
           exit 1
