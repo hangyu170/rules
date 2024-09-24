@@ -33,8 +33,7 @@ jobs:
       run: |
         rm -rf blocklist.srs
         curl -o blocklist.txt https://github.com/ppfeufer/adguard-filter-list/blob/master/blocklist?raw=true
-        mv sing-box/* ./
-        rm -rf sing-box sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
+        rm -rf sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
         echo "Compiling: blocklist"
         if ! sing-box rule-set convert --type adguard blocklist.txt; then
           echo "Error compiling blocklist"
