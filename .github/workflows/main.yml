@@ -3,6 +3,7 @@ name: Download and Upload AdGuard Filter List
 on:
   schedule:
     - cron: '0 0 * * *'
+    workflow_dispatch：
 
 jobs:
   download-and-upload:
