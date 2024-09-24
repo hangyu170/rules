@@ -35,7 +35,7 @@ jobs:
         curl -o blocklist.txt https://github.com/ppfeufer/adguard-filter-list/blob/master/blocklist?raw=true
         rm -rf sing-box-${SING_BOX_VERSION}-linux-amd64 sing-box.tar.gz
         echo "Compiling: blocklist"
-        ls
+        ls -ll
         cat blocklist.txt
         #sing-box rule-set convert --type adguard blocklist.txt
         if ! sing-box rule-set convert --type adguard blocklist.txt; then
