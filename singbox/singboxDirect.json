@@ -2,9 +2,14 @@
   "version": 1,
   "rules": [
     {
+      "domain": [
+        "sysdk.cl2009.com"
+      ],
       "domain_suffix": [
         "dmall.com",
-        "dmallcdn.com"
+        "dmallcdn.com",
+        "nio.com",
+        "tanhuos.com"
       ]
     }
   ]
