@@ -5,7 +5,8 @@
       "domain": [
         "sysdk.cl2009.com",
         "static.nike.com.cn",
-        "c.static-nike.com.cn"
+        "c.static-nike.com.cn",
+        "whoami.akamai.net"
       ],
       "domain_suffix": [
         "dmall.com",
@@ -117,7 +118,8 @@
         "culdata.com",
         "qnydns.com",
         "yaduo.com",
-        "aliyunddos1023.com"
+        "aliyunddos1023.com",
+        "akamai.com"
       ]
     }
   ]
