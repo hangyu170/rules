@@ -3,13 +3,13 @@
   "rules": [
     {
       "domain_suffix": [
-        "hiaiabc.com",
-        "mobsurl.com"
+        "HIAIABC.COM",
+        "MOBSURL.COM"
       ],
        "domain_keyword": [
         "pglstatp-toutiao.com",
         "pangolin-sdk-toutiao",
-         "toponad.com"
+        "toponad.com"
       ]
     }
   ]
