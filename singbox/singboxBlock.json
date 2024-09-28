@@ -3,8 +3,8 @@
   "rules": [
     {
       "domain_suffix": [
-        "HIAIABC.COM",
-        "MOBSURL.COM"
+        "hiaiabc.com",
+        "mobsurl.com"
       ],
        "domain_keyword": [
         "pglstatp-toutiao.com",
