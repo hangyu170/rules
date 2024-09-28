@@ -4,8 +4,11 @@
     {
       "domain_suffix": [
         "HIAIABC.COM",
-        "MOBSURL.COM",
-        "baidu.com"
+        "MOBSURL.COM"
+      ],
+       "domain_keyword": [
+        "pglstatp-toutiao.com",
+        "pangolin-sdk-toutiao"
       ]
     }
   ]
