@@ -1,0 +1,303 @@
+{
+	"log": {
+		"disabled": false,
+		"level": "warn",
+		"timestamp": true
+	},
+	"dns": {
+		"servers": [
+			{
+				"tag": "default-dns",
+				"address": "114.114.114.114",
+				"detour": "direct-out"
+			},
+			{
+				"tag": "block-dns",
+				"address": "rcode://name_error"
+			},
+			{
+				"tag": "google",
+				"address": "https://dns.google/dns-query",
+				"address_resolver": "default-dns",
+				"address_strategy": "ipv4_only",
+				"strategy": "ipv4_only"
+			}
+		],
+		"rules": [
+			{
+				"outbound": [
+					"any"
+				],
+				"server": "default-dns"
+			},
+			{
+				"clash_mode": "direct",
+				"server": "default-dns"
+			},
+			{
+				"clash_mode": "global",
+				"server": "google"
+			},
+             {
+				"rule_set": [
+					"custom_block"
+				],
+				"server": "block-dns"
+			},
+			{
+				"rule_set": [
+					"custom_proxy"
+				],
+				"server": "google"
+			},
+			{
+				"rule_set": [
+					"cnsite",
+					"custom_direct"
+				],
+				"server": "default-dns"
+			},
+			{
+				"type": "logical",
+				"mode": "and",
+				"rules": [
+				{
+					"rule_set": "!cnsite",
+					"invert": true
+				},
+				{
+					"rule_set": "cnip"
+				}
+				],
+				"server": "google",
+				"client_subnet": "116.228.111.118/24"
+			}
+		],
+        "final":"google",
+		"strategy": "ipv4_only",
+		"disable_cache": false,
+		"disable_expire": false,
+		"independent_cache": false
+	},
+	"inbounds": [
+		{
+   		"type": "tun",
+   		"tag": "tun-in",
+   		"inet4_address": "172.19.0.1/30",
+   		"mtu": 9000,
+   		"gso": true,
+   		"auto_route": true,
+   		"stack": "mixed",
+   		"sniff": true,
+   		"sniff_override_destination": true
+}
+	],
+	"outbounds": [
+		{
+			"type": "direct",
+			"tag": "direct-out",
+			"routing_mark": 100
+		},
+		{
+			"type": "block",
+			"tag": "block-out"
+		},
+		{
+			"type": "dns",
+			"tag": "dns-out"
+		},
+		{
+			"type": "shadowsocks",
+			"tag": "jms1(us)",
+			"routing_mark": 100,
+			"server": "c35s1.portablesubmarines.com",
+			"server_port": 5802,
+			"password": "Wjb5wqbdnP",
+			"method": "aes-256-gcm"
+		},
+		{
+			"type": "shadowsocks",
+			"tag": "jms2(us)",
+			"routing_mark": 100,
+			"server": "c35s2.portablesubmarines.com",
+			"server_port": 5802,
+			"password": "Wjb5wqbdnP",
+			"method": "aes-256-gcm"
+		},
+		{
+			"type": "vmess",
+			"tag": "jms3(us)",
+			"routing_mark": 100,
+			"server": "c35s3.portablesubmarines.com",
+			"server_port": 5802,
+			"uuid": "71de3b2e-c440-4129-801b-b3b4cf124d30",
+			"security": "auto",
+			"global_padding": true
+		},
+		{
+			"type": "vmess",
+			"tag": "jms4(jp)",
+			"routing_mark": 100,
+			"server": "c35s4.portablesubmarines.com",
+			"server_port": 5802,
+			"uuid": "71de3b2e-c440-4129-801b-b3b4cf124d30",
+			"security": "auto",
+			"global_padding": true
+		},
+		{
+			"type": "vmess",
+			"tag": "jms5(CA)",
+			"routing_mark": 100,
+			"server": "c35s5.portablesubmarines.com",
+			"server_port": 5802,
+			"uuid": "71de3b2e-c440-4129-801b-b3b4cf124d30",
+			"security": "auto",
+			"global_padding": true
+		},
+		{
+			"type": "vmess",
+			"tag": "jms(cheap)",
+			"routing_mark": 100,
+			"server": "c35s801.portablesubmarines.com",
+			"server_port": 5802,
+			"uuid": "71de3b2e-c440-4129-801b-b3b4cf124d30",
+			"security": "auto",
+			"global_padding": true
+		},
+		{
+			"type": "urltest",
+			"tag": "自动选择",
+			"outbounds": [
+				"jms1(us)",
+				"jms2(us)",
+				"jms3(us)",
+				"jms4(jp)",
+				"jms5(CA)",
+				"jms(cheap)"
+			]
+		},
+		{
+			"type": "selector",
+			"tag": "手动选择",
+			"outbounds": [
+				"direct-out",
+				"jms1(us)",
+				"jms2(us)",
+				"jms3(us)",
+				"jms4(jp)",
+				"jms5(CA)",
+				"jms(cheap)",
+				"自动选择"
+			],
+			"default": "自动选择"
+		},
+		{
+			"type": "selector",
+			"tag": "GLOBAL",
+			"outbounds": [
+				"jms1(us)",
+				"jms2(us)",
+				"jms3(us)",
+				"jms4(jp)",
+				"jms5(CA)",
+				"jms(cheap)",
+				"手动选择"
+			],
+			"default": "手动选择"
+		}
+	],
+	"route": {
+		"rules": [
+			{
+				"protocol": "dns",
+				"outbound": "dns-out"
+			},
+			{
+				"clash_mode": "direct",
+				"outbound": "direct-out"
+			},
+			{
+				"clash_mode": "global",
+				"outbound": "GLOBAL"
+			},
+			{
+				"rule_set": [
+					"custom_proxy"
+				],
+				"outbound": "手动选择"
+			},
+
+			{
+				"rule_set": [
+					"cnip",
+					"cnsite",
+					"custom_direct"
+				],
+				"outbound": "direct-out"
+			},
+            {
+				"protocol": "quic",
+				"outbound": "block-out"
+		    }
+		],
+		"rule_set": [
+			{
+				"type": "remote",
+				"tag": "cnip",
+				"format": "binary",
+				"url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+				"download_detour": "手动选择"
+			},
+			{
+				"type": "remote",
+				"tag": "cnsite",
+				"format": "binary",
+				"url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn.srs",
+				"download_detour": "手动选择"
+			},
+			{
+				"type": "remote",
+				"tag": "!cnsite",
+				"format": "binary",
+				"url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs",
+				"download_detour": "手动选择"
+			},
+			{
+				"type": "remote",
+				"tag": "custom_proxy",
+				"format": "source",
+				"url": "https://raw.githubusercontent.com/hangyu170/rules/refs/heads/main/singbox/singboxProxy.json",
+				"download_detour": "手动选择"
+			},
+			{
+				"type": "remote",
+				"tag": "custom_direct",
+				"format": "source",
+				"url": "https://raw.githubusercontent.com/hangyu170/rules/refs/heads/main/singbox/singboxDirect.json",
+				"download_detour": "手动选择",
+                 "update_interval": "5h"
+			},
+             {
+				"type": "remote",
+				"tag": "custom_block",
+				"format": "source",
+				"url": "https://raw.githubusercontent.com/hangyu170/rules/refs/heads/main/singbox/singboxBlock.json",
+				"download_detour": "手动选择",
+                 "update_interval": "5h"
+			}
+		],
+		"auto_detect_interface": true,
+		"final": "手动选择"
+	},
+	"experimental": {
+		"cache_file": {
+			"enabled": true,
+			"store_rdrc": true
+		},
+		"clash_api": {
+			"external_controller": "127.0.0.1:9090", 
+			"external_ui_download_detour": "手动选择",
+			"default_mode": "rule"
+		}
+	}
+}
