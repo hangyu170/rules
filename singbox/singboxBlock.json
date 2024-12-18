@@ -3,7 +3,8 @@
   "rules": [
     {
       "domain_suffix": [
-        "anythinktech.com"
+        "anythinktech.com",
+        "jddebug.com"
       ],
        "domain_keyword": [
         "pglstatp-toutiao.com",
@@ -12,8 +13,7 @@
         "MOBSURL.COM",
         "mobsurl.com",
         "HIAIABC.COM",
-        "hiaiabc.com",
-        "jddebug.com"
+        "hiaiabc.com"
       ]
     }
   ]
