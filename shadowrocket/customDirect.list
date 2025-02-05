@@ -1,4 +1,8 @@
 DOMAIN-SUFFIX,aliapp.org
 DOMAIN-SUFFIX,tanx.com
 DOMAIN-SUFFIX,tanhuos.com
+DOMAIN-SUFFIX,gdtimg.com
+DOMAIN-SUFFIX,ugdtimg.com
+DOMAIN-SUFFIX,dutils.com
+DOMAIN-SUFFIX,dingstock.net
 IP-CIDR,43.224.247.194/32,no-resolve
