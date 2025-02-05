@@ -5,4 +5,6 @@ DOMAIN-SUFFIX,gdtimg.com
 DOMAIN-SUFFIX,ugdtimg.com
 DOMAIN-SUFFIX,dutils.com
 DOMAIN-SUFFIX,dingstock.net
+DOMAIN-SUFFIX,cpatrk.net
+DOMAIN-SUFFIX,newrelic.com
 IP-CIDR,43.224.247.194/32,no-resolve
