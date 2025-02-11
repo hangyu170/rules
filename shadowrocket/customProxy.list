@@ -1,4 +1,5 @@
-DOMAIN,browserleaks.com
-DOMAIN-SUFFIX,myqnapcloud.io
-IP-CIDR,8.8.8.8/32,no-resolve
-IP-CIDR,8.8.4.4/32,no-resolve
+DOMAIN,browserleaks.com,PROXY
+DOMAIN-SUFFIX,myqnapcloud.io,PROXY
+IP-CIDR,8.8.8.8/32,no-resolve,PROXY
+IP-CIDR,8.8.4.4/32,no-resolve,PROXY
+DOMAIN,app-analytics-services.com,谷歌服务
