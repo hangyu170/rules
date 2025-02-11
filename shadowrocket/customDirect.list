@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,freshippo.com
 DOMAIN-SUFFIX,3gppnetwork.org
 DOMAIN-KEYWORD,douyincdn.com
 DOMAIN-KEYWORD,ndcpp.com
+DOMAIN-SUFFIX,admobile.top
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
 IP-CIDR,9.9.9.9/32,no-resolve
