@@ -26,6 +26,7 @@ DOMAIN-SUFFIX,za.group
 DOMAIN-SUFFIX,hsbc.com.hk
 DOMAIN-SUFFIX,tealiumiq.com
 DOMAIN-SUFFIX,online-metrix.com
+DOMAIN,hsbc.edge.sdk.awswaf.com
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
 IP-CIDR,9.9.9.9/32,no-resolve
