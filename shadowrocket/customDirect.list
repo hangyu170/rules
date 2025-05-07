@@ -29,6 +29,7 @@ DOMAIN-SUFFIX,online-metrix.com
 DOMAIN-SUFFIX,online-metrix.net
 DOMAIN-SUFFIX,eum-appdynamics.com
 DOMAIN,hsbc.edge.sdk.awswaf.com
+DOMAIN-SUFFIX,boccc.com.hk
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
 IP-CIDR,9.9.9.9/32,no-resolve
