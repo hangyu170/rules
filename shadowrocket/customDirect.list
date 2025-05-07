@@ -23,6 +23,9 @@ DOMAIN-SUFFIX,dler.cloud
 DOMAIN-SUFFIX,etnet.com.hk
 DOMAIN-SUFFIX,trkd-hs.com
 DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,tealiumiq.com
+DOMAIN-SUFFIX,online-metrix.com
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
 IP-CIDR,9.9.9.9/32,no-resolve
