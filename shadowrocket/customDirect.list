@@ -39,6 +39,7 @@ DOMAIN-SUFFIX,liveperson.net
 DOMAIN-SUFFIX,online-metrix.net
 DOMAIN-SUFFIX,lpsnmedia.net
 DOMAIN-SUFFIX,walkme.com
+DOMAIN-SUFFIX,futu.com
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
 IP-CIDR,9.9.9.9/32,no-resolve
