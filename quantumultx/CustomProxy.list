@@ -1,2 +1,5 @@
 #browserleaks
-host-suffix,browserleaks.com,proxy
+HOST-SUFFIX,browserleaks.com,proxy
+HOST-SUFFIX,browserleaks.org,proxy
+HOST-SUFFIX,browserleaks.net,proxy
+HOST-SUFFIX,iqos.com,proxy
