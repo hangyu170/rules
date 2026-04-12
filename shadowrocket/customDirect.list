@@ -68,6 +68,7 @@ DOMAIN-SUFFIX,citics.com.hk
 
 #clubsim
 DOMAIN-SUFFIX,clubsim.com.hk
+DOMAIN-SUFFIX,pccw.com
 
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
