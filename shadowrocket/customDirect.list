@@ -66,6 +66,9 @@ DOMAIN-SUFFIX,cmbwlb.com
 DOMAIN-SUFFIX,wlb.com.hk
 DOMAIN-SUFFIX,citics.com.hk
 
+#clubsim
+DOMAIN-SUFFIX,clubsim.com.hk
+
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
 IP-CIDR,9.9.9.9/32,no-resolve
