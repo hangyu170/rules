@@ -76,3 +76,11 @@ DOMAIN-SUFFIX,winglungbank.com,direct
 DOMAIN-SUFFIX,cmbwlb.com,direct
 DOMAIN-SUFFIX,wlb.com.hk,direct
 DOMAIN-SUFFIX,citics.com.hk,direct
+
+#wise
+DOMAIN-SUFFIX,wise.com,direct
+DOMAIN-SUFFIX,transferwise.com,direct
+DOMAIN-SUFFIX,wise.cash,direct
+DOMAIN-SUFFIX,mixpanel.com,direct
+DOMAIN-SUFFIX,mixpnl.com,direct
+DOMAIN-SUFFIX,braze.eu,direct
