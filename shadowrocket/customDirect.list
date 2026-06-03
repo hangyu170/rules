@@ -85,6 +85,14 @@ DOMAIN-SUFFIX,citics.com.hk
 DOMAIN-SUFFIX,clubsim.com.hk
 DOMAIN-SUFFIX,pccw.com
 
+#wise
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wise.cash
+DOMAIN-SUFFIX,mixpanel.com
+DOMAIN-SUFFIX,mixpnl.com
+DOMAIN-SUFFIX,braze.eu
+
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
 IP-CIDR,9.9.9.9/32,no-resolve
