@@ -17,8 +17,8 @@ DOMAIN-SUFFIX,futuhk1.com
 DOMAIN-SUFFIX,futuhongkong.com
 DOMAIN-SUFFIX,qtlcdn.com
 
-IP-CIDR,43.168.0.0/16
-IP-CIDR,43.174.0.0/16
-IP-CIDR,43.175.0.0/16
-IP-CIDR,49.51.0.0/16
-IP-CIDR,119.28.0.0/16
+IP-CIDR,43.168.0.0/16,no-resolve
+IP-CIDR,43.174.0.0/16,no-resolve
+IP-CIDR,43.175.0.0/16,no-resolve
+IP-CIDR,49.51.0.0/16,no-resolve
+IP-CIDR,119.28.0.0/16,no-resolve
