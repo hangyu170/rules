@@ -20,6 +20,7 @@ USER-AGENT,FutuNiuniu*,direct
 
 
 #longbridge
-DOMAIN-SUFFIX,lbkrs.com,direct
-DOMAIN-SUFFIX,pbkrs.com,direct
-DOMAIN-SUFFIX,wbkrs.com,direct
+#DOMAIN-SUFFIX,lbkrs.com,direct
+#DOMAIN-SUFFIX,pbkrs.com,direct
+#DOMAIN-SUFFIX,wbkrs.com,direct
+DOMAIN,geotest.lbkrs.com,direct
