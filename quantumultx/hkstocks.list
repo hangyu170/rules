@@ -1,7 +1,13 @@
 #FUTU
 DOMAIN-SUFFIX,futunn.com,direct
+DOMAIN-SUFFIX,futuau.com,direct
+DOMAIN-SUFFIX,fututrustee.com,direct
+DOMAIN-SUFFIX,futuesop.com,direct
 DOMAIN-SUFFIX,futustatic.com,direct
 DOMAIN-SUFFIX,moomoo.com,direct
+DOMAIN-SUFFIX,moomooequity.com,direct
+DOMAIN-SUFFIX,moomootrustee.com,direct
+DOMAIN-SUFFIX,airstarbank.com,direct
 DOMAIN-SUFFIX,futuhn.com,direct
 DOMAIN-SUFFIX,futuhk.com,direct
 DOMAIN-SUFFIX,futuhkapp.com,direct
@@ -9,3 +15,4 @@ DOMAIN-SUFFIX,futuholdings.com,direct
 DOMAIN-SUFFIX,futuapi.com,direct
 DOMAIN-SUFFIX,futucb.com,direct
 DOMAIN-SUFFIX,futufin.com,direct
+USER-AGENT,FutuNiuniu*,direct
