@@ -17,3 +17,9 @@ DOMAIN-SUFFIX,futucb.com,direct
 DOMAIN-SUFFIX,futufin.com,direct
 DOMAIN-SUFFIX,fututrade.com,direct
 USER-AGENT,FutuNiuniu*,direct
+
+
+#longbridge
+DOMAIN-SUFFIX,lbkrs.com,direct
+DOMAIN-SUFFIX,pbkrs.com,direct
+DOMAIN-SUFFIX,wbkrs.com,direct
