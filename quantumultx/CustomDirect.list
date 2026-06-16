@@ -42,6 +42,17 @@ DOMAIN-SUFFIX,appsflyersdk.com,direct
 DOMAIN-SUFFIX,autonavi.com,direct
 DOMAIN-SUFFIX,app-measurement.com,direct
 
+#FUTU
+DOMAIN-SUFFIX,futunn.com,direct
+DOMAIN-SUFFIX,futustatic.com,direct
+DOMAIN-SUFFIX,moomoo.com,direct
+DOMAIN-SUFFIX,futuhn.com,direct
+DOMAIN-SUFFIX,futuhk.com,direct
+DOMAIN-SUFFIX,futuhkapp.com,direct
+DOMAIN-SUFFIX,futuholdings.com,direct
+DOMAIN-SUFFIX,futuapi.com,direct
+DOMAIN-SUFFIX,futucb.com,direct
+
 #chiefgroup
 DOMAIN-SUFFIX,chiefgroup.com.hk,direct
 DOMAIN-SUFFIX,rapidssl.com,direct
