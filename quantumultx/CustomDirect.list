@@ -70,6 +70,9 @@ DOMAIN-SUFFIX,engage7.com,direct
 DOMAIN-SUFFIX,engageforce.com,direct
 DOMAIN-SUFFIX,engageforce.net,direct
 
+#longbridge
+DOMAIN,static.lbkrs.com,direct
+
 #CMBWING
 DOMAIN-SUFFIX,cmbwinglungbank.com,direct
 DOMAIN-SUFFIX,winglungbank.com,direct
