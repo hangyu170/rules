@@ -87,3 +87,12 @@ DOMAIN-SUFFIX,wise.cash,direct
 DOMAIN-SUFFIX,mixpanel.com,direct
 DOMAIN-SUFFIX,mixpnl.com,direct
 DOMAIN-SUFFIX,braze.eu,direct
+
+#ibkr
+DOMAIN-SUFFIX,ibkr.com,direct
+DOMAIN-SUFFIX,ibkr.com.cn,direct
+DOMAIN-SUFFIX,ibllc.com,direct
+DOMAIN-SUFFIX,ibllc.com.cn,direct
+DOMAIN-SUFFIX,ibkr.info,direct
+DOMAIN-SUFFIX,interactivebrokers.com,direct
+
