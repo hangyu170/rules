@@ -82,6 +82,14 @@ DOMAIN-SUFFIX,mixpanel.com
 DOMAIN-SUFFIX,mixpnl.com
 DOMAIN-SUFFIX,braze.eu
 
+#ibkr
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,ibkr.com.cn
+DOMAIN-SUFFIX,ibllc.com
+DOMAIN-SUFFIX,ibllc.com.cn
+DOMAIN-SUFFIX,ibkr.info
+DOMAIN-SUFFIX,interactivebrokers.com
+
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
 IP-CIDR,9.9.9.9/32,no-resolve
