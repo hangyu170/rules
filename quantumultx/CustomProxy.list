@@ -3,10 +3,10 @@ HOST-SUFFIX,browserleaks.com,proxy
 HOST-SUFFIX,browserleaks.org,proxy
 HOST-SUFFIX,browserleaks.net,proxy
 HOST-SUFFIX,iqos.com,proxy
-HOST-SUFFIX,muse.ai
-HOST-SUFFIX,meta.ai
-HOST-SUFFIX,metaaivm.com
-HOST-SUFFIX,metaai.ai
-HOST-SUFFIX,siftscience.com
-HOST-SUFFIX,claude.com
-HOST-KEYWORD,datadoghq.com
+HOST-SUFFIX,muse.ai,proxy
+HOST-SUFFIX,meta.ai,proxy
+HOST-SUFFIX,metaaivm.com,proxy
+HOST-SUFFIX,metaai.ai,proxy
+HOST-SUFFIX,siftscience.com,proxy
+HOST-SUFFIX,claude.com,proxy
+HOST-KEYWORD,datadoghq.com,proxy
