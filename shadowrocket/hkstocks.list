@@ -3,7 +3,9 @@ DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,futustatic.com
 DOMAIN-SUFFIX,moomoo.com
 DOMAIN-SUFFIX,futuhn.com
+DOMAIN-SUFFIX,futunh.com
 DOMAIN-SUFFIX,futuhk.com
+DOMAIN-SUFFIX,futuhk1.com
 DOMAIN-SUFFIX,futuhkapp.com
 DOMAIN-SUFFIX,futuholdings.com
 DOMAIN-SUFFIX,futuapi.com
@@ -16,6 +18,7 @@ DOMAIN-SUFFIX,futuin.com
 DOMAIN-SUFFIX,futuhk1.com
 DOMAIN-SUFFIX,futuhongkong.com
 DOMAIN-SUFFIX,qtlcdn.com
+DOMAIN-SUFFIX,futuniuniu.com
 
 IP-CIDR,43.168.0.0/16,no-resolve
 IP-CIDR,43.174.0.0/16,no-resolve
