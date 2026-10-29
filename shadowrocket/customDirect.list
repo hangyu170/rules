@@ -30,6 +30,8 @@ DOMAIN-SUFFIX,boci.com.hk
 DOMAIN-SUFFIX,bochk-corp.com
 DOMAIN-SUFFIX,bocce.com.hk
 DOMAIN-SUFFIX,boccc.com.hk
+
+
 DOMAIN-SUFFIX,walkme.com
 DOMAIN-SUFFIX,morningstar.com
 DOMAIN-SUFFIX,trkd-hs.com
@@ -95,6 +97,9 @@ DOMAIN-SUFFIX,oics.net
 DOMAIN-SUFFIX,jeffreybase.com
 DOMAIN-SUFFIX,dilide.com
 DOMAIN-SUFFIX,yegeyucan.com
+DOMAIN-SUFFIX,vmiss.com
+DOMAIN-SUFFIX,dmit.io
+DOMAIN-SUFFIX,dmit.sh
 
 IP-CIDR,43.224.247.194/32,no-resolve
 IP-CIDR,101.101.101.101/32,no-resolve
