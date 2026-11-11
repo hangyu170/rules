@@ -1,6 +1,6 @@
 # ======= 通用人机验证与身份鉴权规则 =======
 # Cloudflare Turnstile 5秒盾
-HOST, challenges.cloudflare.com, Anthropic
+HOST-SUFFIX, challenges.cloudflare.com, Anthropic
 HOST-SUFFIX, cfl.re, Anthropic
 
 # hCaptcha 人机验证
