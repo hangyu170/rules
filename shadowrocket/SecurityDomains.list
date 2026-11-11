@@ -18,3 +18,6 @@ DOMAIN-KEYWORD, recaptcha
 DOMAIN-SUFFIX, auth0.com
 DOMAIN-SUFFIX, okta.com
 DOMAIN-SUFFIX, oktacdn.com
+DOMAIN-SUFFIX,datadog.pool.ntp.org
+DOMAIN-SUFFIX,siftscience.com
+DOMAIN,browser-intake-us5-datadoghq.com
