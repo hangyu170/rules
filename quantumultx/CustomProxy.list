@@ -8,7 +8,5 @@ HOST-SUFFIX,meta.ai,proxy
 HOST-SUFFIX,metaaivm.com,proxy
 HOST-SUFFIX,metaai.ai,proxy
 HOST-SUFFIX,siftscience.com,proxy
-HOST-SUFFIX,claude.com,proxy
-HOST-KEYWORD,datadoghq.com,proxy
 HOST,antigravity-unleash.goog,proxy
 HOST-SUFFIX,soramemo.com,proxy
