@@ -1,0 +1,20 @@
+# ======= 通用人机验证与身份鉴权规则 =======
+# Cloudflare Turnstile 5秒盾
+DOMAIN-SUFFIX, challenges.cloudflare.com
+DOMAIN-SUFFIX, cfl.re
+
+# hCaptcha 人机验证
+DOMAIN-SUFFIX, hcaptcha.com
+
+# Arkose Labs / FunCaptcha (OpenAI / GitHub 旋转验证码)
+DOMAIN-SUFFIX, arkoselabs.com
+DOMAIN-SUFFIX, funcaptcha.com
+
+# Google reCAPTCHA 验证码
+DOMAIN-SUFFIX, recaptcha.net
+DOMAIN-KEYWORD, recaptcha
+
+# Auth0 & Okta 单点登录鉴权服务
+DOMAIN-SUFFIX, auth0.com
+DOMAIN-SUFFIX, okta.com
+DOMAIN-SUFFIX, oktacdn.com
