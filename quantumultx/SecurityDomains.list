@@ -1,0 +1,20 @@
+# ======= 通用人机验证与身份鉴权规则 =======
+# Cloudflare Turnstile 5秒盾
+HOST, challenges.cloudflare.com, Anthropic
+HOST-SUFFIX, cfl.re, Anthropic
+
+# hCaptcha 人机验证
+HOST-SUFFIX, hcaptcha.com, Anthropic
+
+# Arkose Labs / FunCaptcha (OpenAI / GitHub 旋转验证码)
+HOST-SUFFIX, arkoselabs.com, Anthropic
+HOST-SUFFIX, funcaptcha.com, Anthropic
+
+# Google reCAPTCHA 验证码
+HOST-SUFFIX, recaptcha.net, Anthropic
+HOST-KEYWORD, recaptcha, Anthropic
+
+# Auth0 & Okta 单点登录鉴权服务
+HOST-SUFFIX, auth0.com, Anthropic
+HOST-SUFFIX, okta.com, Anthropic
+HOST-SUFFIX, oktacdn.com, Anthropic
